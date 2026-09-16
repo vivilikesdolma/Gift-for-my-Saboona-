@@ -3,7 +3,39 @@
 <html>
 <head>
 <title>Happy One Month 🎀</title>
-<style>
+<style> #opening{
+text-align:center;
+margin-top:100px;
+}
+
+.envelope{
+font-size:90px;
+animation:float 2s ease-in-out infinite;
+}
+
+#opening h2{
+color:#ff4081;
+font-size:28px;
+}
+
+#opening p{
+font-size:18px;
+color:#d81b60;
+}
+
+#opening button{
+background:#ff4081;
+color:white;
+}
+
+@keyframes float{
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-12px);
+}
+}
 body{
 background:#ffd6e7;
 font-family:Arial,sans-serif;
@@ -60,38 +92,50 @@ transform:translateY(110vh);
 
 <body>
 
-<h1>Happy One Month 💖</h1>
+<div id="opening">
+    <div class="envelope">💌</div>
+    <h2>A little something for you ❤️</h2>
 
-<p>
-To the person who somehow became one of my favorite parts of every day.
-</p>
+   <p>Open this when you're ready...</p>
+  <button onclick="openGift()">Open Me 💗</button>
+</div>
 
-<p>
-Click a button ↓
-</p>
+<div id="main" style="display:none;">
+    <h1>Happy One Month ❤️</h1>
+    <p>
+    To the person who somehow became one of my favorite parts of every day.
+    </p>
 
-<button id="yes" onclick="showMessage()">
-Open Gift
-</button>
+   <p>
+    Click a button ↓
+    </p>
 
-<button id="no">
-Definitely Not The Gift
-</button>
+   <button id="yes" onclick="showMessage()">
+    Open Gift
+    </button>
 
-<div id="message">
-💗 Happy One Month Anniversary 💗
-<br><br>
-Thank you for being my sweet scented Saboona,
-I love you wholeheartedly 
-<br><br>
-I will steal you and put you in my bag.
+   <button id="no">
+    Definitely Not The Gift
+    </button>
+    <div id="message">
+    💗 Happy One Month 💗
+    <br><br>
+    Thank you for being my cupcake scented Saboona.
+    I love you so much
+    <br><br>
+    I’m gonna steal you and put you in my bag.
+    </div>
+
 </div>
 
 <script>
 function showMessage(){
 document.getElementById("message").style.display="block";
 }
-
+function openGift(){
+document.getElementById("opening").style.display="none";
+document.getElementById("main").style.display="block";
+}
 const noButton=document.getElementById("no");
 
 noButton.addEventListener("mouseover",()=>{
