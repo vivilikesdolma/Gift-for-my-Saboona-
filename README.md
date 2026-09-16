@@ -93,7 +93,7 @@ transform:translateY(110vh);
 
 <div id="opening">
     <div class="envelope">💌</div>
-    <h2>A little something for you ❤️</h2>
+    <h2>A little something for you 💗</h2>
 
    <p>Open this when you're ready...</p>
   <button onclick="openGift()">Open Me 💗</button>
@@ -102,7 +102,7 @@ transform:translateY(110vh);
 <div id="main" style="display:none;">
     <h1>Happy One Month ❤️</h1>
     <p>
-    To the person who somehow became one of my favorite parts of every day.
+    To my favourite person alive.
     </p>
 
    <p>
@@ -120,7 +120,7 @@ transform:translateY(110vh);
     💗 Happy One Month 💗
     <br><br>
     Thank you for being my cupcake scented Saboona.
-    I love you so much
+    I love you so much. you mean the world to me 
     <br><br>
     I’m gonna steal you and put you in my bag.
     </div>
